@@ -1,5 +1,5 @@
 {
-  "_type": "/ephys/Electrode",
+  "_type": "Electrode",
   "_categories": [
     "setupComponent"
   ],
@@ -8,17 +8,17 @@
     "conductorMaterial": {
       "_instruction": "Add the conductor material of this electrode.",
       "_linkedTypes": [
-        "/chemicals/ChemicalMixture",
-        "/chemicals/ChemicalSubstance",
-        "/controlledTerms/MolecularEntity"
+        "ChemicalMixture",
+        "ChemicalSubstance",
+        "MolecularEntity"
       ]
     },
     "insulatorMaterial": {
       "_instruction": "Add the insulator material of this electrode.",
       "_linkedTypes": [
-        "/chemicals/ChemicalMixture",
-        "/chemicals/ChemicalSubstance",
-        "/controlledTerms/MolecularEntity"
+        "ChemicalMixture",
+        "ChemicalSubstance",
+        "MolecularEntity"
       ]
     },
     "internalIdentifier": {
@@ -28,8 +28,8 @@
     "intrinsicResistance": {
       "_instruction": "Enter the intrinsic resistance of this electrode.",
       "_embeddedTypes": [
-        "/core/QuantitativeValue",
-        "/core/QuantitativeValueRange"
+        "QuantitativeValue",
+        "QuantitativeValueRange"
       ]
     }
   }

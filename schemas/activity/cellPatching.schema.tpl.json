@@ -1,12 +1,12 @@
 {
-  "_type": "/ephys/CellPatching",
+  "_type": "CellPatching",
   "_extends": "/specimenPrep/schemas/activity/devicePlacement.schema.tpl.json",
   "properties": {
     "bathTemperature": {
       "_instruction": "Enter the temperature of the bath solution.",
       "_embeddedTypes": [
-        "/core/QuantitativeValue",
-        "/core/QuantitativeValueRange"
+        "QuantitativeValue",
+        "QuantitativeValueRange"
       ]
     },
     "device": {
@@ -15,19 +15,19 @@
       "uniqueItems": true,
       "_instruction": "Add all patch pipettes placed during this activity.",
       "_linkedTypes": [
-        "/ephys/PipetteUsage"
+        "PipetteUsage"
       ]
     },
     "tissueBathSolution": {
       "_instruction": "Add the chemical mixture used as bath solution during this activity.",
       "_linkedTypes": [
-        "/chemicals/ChemicalMixture"
+        "ChemicalMixture"
       ]
     },
     "variation": {
       "_instruction": "Add the patch-clamp variation used during this activity.",
       "_linkedTypes": [
-        "/controlledTerms/PatchClampVariation"
+        "PatchClampVariation"
       ]
     }
   }

@@ -1,5 +1,5 @@
 {
-  "_type": "/ephys/Channel",
+  "_type": "Channel",
   "required": [
     "internalIdentifier",
     "unit"
@@ -12,7 +12,7 @@
     "unit": {
       "_instruction": "Add the unit of measurement for this channel.",
       "_linkedTypes": [
-        "/controlledTerms/UnitOfMeasurement"
+        "UnitOfMeasurement"
       ]
     }
   }
