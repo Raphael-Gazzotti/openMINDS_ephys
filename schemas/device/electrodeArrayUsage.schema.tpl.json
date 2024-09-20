@@ -1,5 +1,5 @@
 {
-  "_type": "ElectrodeArrayUsage",
+  "_type": "ephys:ElectrodeArrayUsage",
   "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json",
   "properties": {
     "anatomicalLocationOfArray": {
@@ -26,14 +26,14 @@
       "uniqueItems": true,
       "_instruction": "Enter the contact resistance for each electrode of this array during its use, in the same order that the electrode identifiers for this electrode array have been specified.",
       "_embeddedTypes": [
-        "QuantitativeValue",
-        "QuantitativeValueRange"
+        "core:QuantitativeValue",
+        "core:QuantitativeValueRange"
       ]
     },    
     "device": {
       "_instruction": "Add the electrode array used.",
       "_linkedTypes": [
-        "ElectrodeArray"
+        "ephys:ElectrodeArray"
       ]
     },   
     "spatialLocationOfElectrodes": {
@@ -42,7 +42,7 @@
       "uniqueItems": true,
       "_instruction": "Add all coordinate points that best describe the spatial location of each electrode contact of this array during its use, in the same order that the electrode identifiers for this electrode array have been specified.",
       "_embeddedTypes": [
-        "CoordinatePoint"
+        "https://openminds.ebrains.eu/sands/CoordinatePoint"
       ]
     },
     "usedElectrode": {

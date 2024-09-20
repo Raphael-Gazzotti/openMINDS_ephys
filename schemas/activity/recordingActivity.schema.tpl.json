@@ -1,5 +1,5 @@
 {
-  "_type": "RecordingActivity",
+  "_type": "ephys:RecordingActivity",
   "_extends": "/core/schemas/research/experimentalActivity.schema.tpl.json",
   "properties": {
     "device": {
@@ -8,17 +8,17 @@
       "uniqueItems": true,
       "_instruction": "Add all devices used during this recording activity.",
       "_linkedTypes": [
-        "ElectrodeArrayUsage",
-        "ElectrodeUsage",
-        "PipetteUsage"
+        "ephys:ElectrodeArrayUsage",
+        "ephys:ElectrodeUsage",        
+        "ephys:PipetteUsage"
       ]
     },
     "input": {
       "_linkedTypes": [       
-        "SubjectGroupState",
-        "SubjectState",
-        "TissueSampleCollectionState",
-        "TissueSampleState"
+        "core:SubjectGroupState",
+        "core:SubjectState",
+        "core:TissueSampleCollectionState",
+        "core:TissueSampleState"
       ]
     },
     "internalIdentifier": {

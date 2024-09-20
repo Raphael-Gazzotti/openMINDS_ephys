@@ -1,17 +1,17 @@
 {
-  "_type": "Pipette",
+  "_type": "ephys:Pipette",
   "_extends": "/core/schemas/products/device.schema.tpl.json",
   "properties": {
     "externalDiameter": {     
       "_instruction": "Enter the external diameter of the pipette.",
       "_embeddedTypes": [
-        "QuantitativeValue"
+        "core:QuantitativeValue"
       ]
     },
     "internalDiameter": {      
       "_instruction": "Enter the internal diameter of the pipette.",
       "_embeddedTypes": [
-        "QuantitativeValue"
+        "core:QuantitativeValue"
       ]
     },
     "internalIdentifier": {
@@ -21,9 +21,9 @@
     "material": {
       "_instruction": "Add the material that the pipette is made of.",
       "_linkedTypes": [
-        "ChemicalMixture",
-        "ChemicalSubstance",
-        "MolecularEntity"
+        "chemicals:ChemicalMixture",
+        "chemicals:ChemicalSubstance",
+        "controlledTerms:MolecularEntity"
       ]
     }
   }

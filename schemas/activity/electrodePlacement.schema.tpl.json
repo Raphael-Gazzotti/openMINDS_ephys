@@ -1,5 +1,5 @@
 {
-  "_type": "ElectrodePlacement",
+  "_type": "ephys:ElectrodePlacement",
   "_extends": "/specimenPrep/schemas/activity/devicePlacement.schema.tpl.json",
   "properties": {
     "device": {
@@ -8,8 +8,8 @@
       "uniqueItems": true,
       "_instruction": "Add all electrodes placed during this activity.",
       "_linkedTypes": [
-        "ElectrodeUsage",
-        "ElectrodeArrayUsage"
+        "ephys:ElectrodeUsage",
+        "ephys:ElectrodeArrayUsage"
       ]
     }
   }
